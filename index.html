@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./node_modules/aos/dist/aos.css" rel="stylesheet" />
+    <link href="./node_modules/animate.css/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/default.css" />
+    <link href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light pl-0" role="navigation">
+            <a class="navbar-brand" data-page="main" href="javascript:;">
+                <h1 style="font-size:xx-large; letter-spacing: 0.1cap; padding-left: 10%"><b>ARCTIC ATELIER</b></h1>
+            </a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav pt-3 pt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" data-page="fashion" href="javascript:;">FASHION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-page="collection" href="javascript:;">COLLECTION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-page="hautecouture" href="javascript:;">HAUTE COUTURE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-page="about" href="javascript:;">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-page="contact" href="javascript:;">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="search-form-tigger nav-link" data-toggle="search-form">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div class="col-md-12 p-0">
+                <div class="search-form-wrapper my-3">
+                    <form method="POST"
+                        class="search-form form-inline d-flex  md-form form-sm active-cyan active-cyan-2">
+                        <div class="border py-1 mr-2">
+                            <input class="form-control form-control-sm border-0 w-100 p-0 px-2 py-2" type="text"
+                                name="q" placeholder="Search..." aria-label="Search">
+                        </div>
+                        <div class="position-absolute right">
+                            <button type="button" class="search-btn mx-2 px-2 py-2">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="javascript:" id="return-to-top" style="display: inline;">
+        <i aria-hidden="true" class="fa fa-chevron-up"></i>
+    </a>
+    <div class="tab-content" id="content"></div>
+    <footer>
+        <div class="container-fluid background-gray ">
+            <div style="background-color: #f9f9f9;" class="row pt-5">
+                <div class="col-xl-4 offset-xl-2 p-30">
+                    <div class="wrap-footer">
+                        Join our mailing list for updates about our products, exhibitions, events, and more.
+                    </div>
+                    <form class="form-horizontal my-5" id="subscribeForm">
+                        <input type="hidden" name="_token" value="Fo6WmPTUYKT9Yc3JHuXwPTYIlj6f0WpuE5GOrPEV">
+                        <div class="input-group input-group-lg">
+                            <input type="email" id="SubsEmail" class="form-control form-control-sm rounded-0"
+                                name="email" placeholder="Email" required="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="./assets/js/main.js"></script>
